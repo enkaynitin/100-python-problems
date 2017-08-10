@@ -1,4 +1,5 @@
 number = raw_input().split(',')
+bin_div_by_5 = []
 
 l = len(number)
 if l != 4:
@@ -30,4 +31,6 @@ def divisilibity_check(arg,d):
 if binary_check(number):
     for n in number:
         if divisilibity_check(int(n),5):
-            print n
+            bin_div_by_5.append(n)
+
+print ','.join(bin_div_by_5)
