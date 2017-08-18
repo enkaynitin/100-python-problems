@@ -1,0 +1,13 @@
+list0 = [12,24,35,24,88,120,155,88,120,155]
+
+def removeDuplicates(li):
+    seen = set()
+    newli = []
+    for i in li:
+        if i not in seen:
+            seen.add(i)
+            newli.append(i)
+
+    return newli
+
+print removeDuplicates(list0)
